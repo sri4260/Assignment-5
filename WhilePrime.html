@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>3. Count Down Timer:</p>
+</body>
+<script>
+    let counter=2;
+    while (counter<=20){
+        let isPrime=true;
+        for(let j=2;j<counter;j++){
+            if(counter%j===0){
+                isPrime=false;
+                break;
+
+            }
+
+        }
+        if(isPrime){
+            document.write(counter,"<br>")
+        }
+        counter++;
+    }
+</script>
+</html>
